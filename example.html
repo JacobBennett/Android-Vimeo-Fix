@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+<head>
+<title>VimeoFixr.js Example</title>
+
+<style>
+body {font-family: 'Helvetica Neue', Arial, sans-serif;}
+
+p {width :500px;}
+</style>
+</head>
+<body>
+	<h1>VimeoFixr.js Example</h1>
+	<p>If viewing this page on an Android browser effected by the Vimeo Bug, you should see an image that is linked to a Vimeo video. If you are on an any other browser, you should see an inline player.</p>
+	<p>To test for Android, open Developer Tools in your browser, and set the User Agent to Android Chrome</p>
+
+	<a href="http://www.vimeo.com/m/70387032" class="fixThis"><img src="img/placeholder.jpg"/></a>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script src="https://raw.github.com/davatron5000/FitVids.js/master/jquery.fitvids.js"></script>
+	<script src="js/jquery.vimeofixr.min.js"></script>
+
+	<script>
+	  $(document).ready(function(){
+
+	    // Target your links using whatever class you assigned them
+	    $(".fixThis").vimeoFixr();
+	  });
+	</script>
+
+
+</body>
+</html>
